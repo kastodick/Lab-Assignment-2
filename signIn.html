@@ -72,7 +72,7 @@
             <img src="logo.png" class="logo">
             <a href="index.html" class="nav-button">Home</a>
             <a href="about.html" class="nav-button">About</a>
-            <a href="portfolio.html" class="nav-button" style="background-color: tan;">Portfolio</a>
+            <a href="portfolio.html" class="nav-button">Portfolio</a>
             <a href="contact.html" class="nav-button">Contact</a>
             <div class="dropdown">
                 <button class="nav-button" onclick="document.getElementById('myDropdown').classList.toggle('show');">Options</button>
@@ -85,10 +85,15 @@
     </head>
     <body>
         <div style="display: flex; justify-content: center; align-items: center; height: 75vh;">
-            <div style="display: flex; flex-direction: column; align-items: center; margin-right: 40px;">
-                <h1>Portfolio</h1>
-                <h2>portfolio stuff, I'm not really sure what to put here. Maybe some code samples/screenshots of work?</h2>
-                <img src="logo.png" style="width: 200px;">
+            <div style="display: flex; flex-direction: column; align-items: left;">
+                <h1>Sign In:</h1>
+                <form>
+                    <label>Username:</label>
+                    <input type="text"><br><br>
+                    <label>Password:</label>
+                    <input type="text"><br><br>
+                    <button type="submit" class="nav-button">Sign In</button>
+                </form>
             </div>
         </div>
 

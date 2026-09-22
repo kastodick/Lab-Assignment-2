@@ -40,6 +40,33 @@
                 width: 100%;
             }
             
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown a:hover {background-color: #ddd;}
+            .show {
+                display: block;
+            }
+                    
         </style>
         <div class="top-header">
             <img src="logo.png" class="logo">
@@ -47,10 +74,13 @@
             <a href="about.html" class="nav-button" style="background-color: tan;">About</a>
             <a href="portfolio.html" class="nav-button">Portfolio</a>
             <a href="contact.html" class="nav-button">Contact</a>
-            <select name="Options">
-                <option>Sign In</option>
-                <option>Sign Up</option>
-            </select>
+            <div class="dropdown">
+                <button class="nav-button" onclick="document.getElementById('myDropdown').classList.toggle('show');">Options</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="signIn.html">Sign In</a>
+                        <a href="signUp.html">Sign Up</a>
+                    </div>
+            </div>
         </div>
     </head>
     <body>
