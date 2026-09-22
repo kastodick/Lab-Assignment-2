@@ -1,0 +1,71 @@
+<html style="background-color: #99d1b75a;">
+    <head>
+        <style>
+            .top-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #749f8f;
+                padding: 10px 20px;
+                height: 55px;
+            }
+
+            .logo{
+                width: 75px;
+                height: 75px;
+            }
+
+            .nav-button {
+                background-color: #abd6c3a6;
+                color: white;
+                border: none;
+                height: 55px;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 14px;
+                text-decoration: underline;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+
+            .footer {
+                background-color: #749f8f;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            
+        </style>
+        <div class="top-header">
+            <img src="logo.png" class="logo">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="about.html" class="nav-button" style="background-color: tan;">About</a>
+            <a href="portfolio.html" class="nav-button">Portfolio</a>
+            <a href="contact.html" class="nav-button">Contact</a>
+            <select name="Options">
+                <option>Sign In</option>
+                <option>Sign Up</option>
+            </select>
+        </div>
+    </head>
+    <body>
+        <div style="display: flex; justify-content: center; align-items: center; height: 75vh;">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-right: 40px;">
+                <h1>About</h1>
+                <h2>This is a super long paragraph about me!</h2>
+                <img src="logo.png" style="width: 200px;">
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="terms.html" style="color: white;">Terms & Conditions</a> | 
+            <a href="privacy.html" style="color: white;">Privacy Policy</a> | 
+            <a href="cookies.html" style="color: white;">Cookie Policy</a>
+        </div>
+    </body>
+</html>
